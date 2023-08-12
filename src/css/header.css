@@ -1,0 +1,134 @@
+
+/* SUIT Font */
+@font-face {
+	font-family: "SUIT-Regular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+	format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+body,
+ul,
+li,
+button {
+margin: 0;
+padding: 0;
+list-style: none;
+font-family: "SUIT-Regular";
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+h1 {
+margin: 0;
+padding: 0;
+font-family: "Yeseva One", cursive;
+}
+
+.container {
+width: 1180px;
+padding: 0 10px;
+margin: 0 auto;
+}
+
+/* logo-box */
+.top-bar {
+height: 110px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.top-bar > .logo-box .logo-txt {
+font-size: 14px;
+color: #666;
+padding: 5px 0;
+}
+/* btn-area */
+.btns {
+border: 3px solid #000;
+border-radius: 50px;
+background-color: transparent;
+padding: 5px 20px;
+margin: 0 3px;
+font-weight: 600;
+cursor: pointer;
+}
+.font-20 {
+font-size: 20px;
+}
+
+/* main-box */
+.main-box > ul {
+display: flex;
+}
+.main-box > ul > li {
+margin: 80px 10px;
+border-radius: 50%;
+background-color: #999;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.main-box > ul > li > .txt-box {
+position: absolute;
+z-index: 5;
+text-align: center;
+}
+.main-box > ul > li > .txt-box > .icons {
+display: flex;
+justify-content: center;
+}
+.main-box > ul > li > .txt-box > .icons > .img-box {
+width: 50px;
+}
+.main-box > ul > li > .txt-box > .icons > .img-box > img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.main-box > ul > li > .txt-box > .titles {
+padding: 8px 0;
+}
+.main-box > ul > li > .txt-box > .infos > span {
+display: block;
+font-size: 16px;
+font-weight: 600;
+margin: 5px 0;
+}
+.main-box > ul > li > .img-box {
+width: 380px;
+height: 380px;
+border-radius: 50%;
+position: relative;
+}
+.main-box > ul > li > .img-box::after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 2;
+height: 100%;
+content: "";
+transition: height 0.3s ease-out;
+background-color: #fff;
+opacity: 0.3;
+border-radius: 50%;
+}
+.main-box > ul > li > .img-box > img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+vertical-align: bottom;
+}
+
+/* footer */
+.footer {
+font-size: 13px;
+color: #999;
+text-align: right;
+}
+
